@@ -1,7 +1,7 @@
 class Tes {
 	public static void main(String[] args) {
-		int x =50;
-		if (x <30) {
+		int x =10;
+		if (x <20) {
 			System.out.print("Ini adalah statemen if");
 		}
 	}
