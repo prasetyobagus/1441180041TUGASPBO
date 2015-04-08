@@ -18,28 +18,25 @@ class laptop {
 	public laptop(String merk, String warna)
 	{
 	
-	merk = "Lenovo";
-	warna = "Putih";
-	wifi = "Terhubung";
-	baterai = 80;
-	
+	merk = merk;
+	warna = warna;
+
 	}
 	public laptop(String merk, String warna, String wifi)
 	{
 	
-	merk = "Asus";
-	warna = "Biru";
-	wifi = "Terhubung";
-	baterai = 100;
+	merk = merk;
+	warna = warna;
+	wifi = wifi;
 
 	}
 	public laptop(String merk, String warna, String wifi, int baterai)
 	{
 
-	merk = "Fujitsu";
-	warna = "Merah";
-	wifi = "Terhubung";
-	baterai = 100;
+	merk = merk;
+	warna = warna;
+	wifi = wifi;
+	baterai = baterai;
 	}
 
 
