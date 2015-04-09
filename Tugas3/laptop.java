@@ -2,7 +2,7 @@ class laptop {
 	private String merk;
 	private String warna;
 	private String wifi;
-	int baterai;
+	private int baterai;
 
 
 	public laptop()
@@ -81,4 +81,20 @@ class laptop {
 		return baterai;
 	}
 
+	public void setMerk(String a)
+	{
+		merk = a;
+	}
+	public void setWarna(String b)
+	{
+		warna = b;
+	}
+	public void setWifi(String c)
+	{
+		wifi = c;
+	}
+	public void setBaterai(int d)
+	{
+		baterai = d;
+	}
 }
