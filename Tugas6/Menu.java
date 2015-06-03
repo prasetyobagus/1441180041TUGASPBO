@@ -7,17 +7,17 @@ public class Menu{
             hasil=a+b;
             System.out.println("Pertambahan : "+a+" + "+b+" = "+hasil);
         }
-        //Fungsi Pengurangan a + b
+        //Fungsi Pengurangan a - b
         void Pengurangan (int a,int b){
             hasil=a-b;
             System.out.println("Pengurangan : "+a+" - "+b+"  = "+hasil);
         }
-        //Fungsi Perkalian a + b
+        //Fungsi Perkalian a * b
         void Perkalian (int a,int b){
             hasil=a*b;
             System.out.println("Perkalian   : "+a+" X "+b+" = "+hasil);
         }
-        //Fungsi Pembagian a + b
+        //Fungsi Pembagian a / b
         void Pembagian (int a,int b){
             hasil=a/b;
             System.out.println("Pembagian   : "+a+" / "+b+"  = "+hasil);
