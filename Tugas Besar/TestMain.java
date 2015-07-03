@@ -34,12 +34,24 @@ public class TestMain {
         lpi.setDaftarKlub(arema1);
         lpi.setDaftarKlub(persib);
 
-//        No 1(Get Divisi dengan nama Liga)
+        System.out.println("Tambahan dari pak. Prima");
+        indonesia.setNamaDivisi(isl);
+        isl.setNamaKlub(arema);
+        System.out.println(isl.getNamaKlub());
+        System.out.println(indonesia.getNamaDivisi());
+        System.out.println("");
+
+
+//
         System.out.println("Nomer 1 Get daftar divisi by nama liga");
+        indonesia.setNamaDivisi(lpi);
+        indonesia.getDaftarDivisi();
+        System.out.println(indonesia.getNamaLiga());
+        System.out.println(indonesia.getNamaDivisi());
         System.out.println(indonesia.getDaftarDivisi());
         System.out.println("");
 
-//        No 2(Get
+//
         System.out.println("Nomer 2 get daftar klub by nama liga");
         indonesia.setDaftarKlub(arema);
         System.out.println(indonesia.getNamaLiga());
@@ -47,14 +59,14 @@ public class TestMain {
         System.out.println("");
 
 
-//        No 3(Get
+//
         System.out.println("Nomer 3 get daftar klub by nama divisi");
         System.out.println(isl.getDaftarKlub());
         System.out.println(lpi.getDaftarKlub());
         System.out.println("");
 
 
-//        No 4(Get
+//
         System.out.println("Nomer 4 get klub ini berada di divisi mana by nama klub");
         System.out.println(arema.getNamaKlub());
         System.out.println(arema.getDivisi());

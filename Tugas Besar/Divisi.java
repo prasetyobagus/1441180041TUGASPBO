@@ -10,6 +10,7 @@ public class Divisi {
 
     private String namaDivisi;
     ArrayList<Klub> daftarKlub = new ArrayList<Klub>();
+    ArrayList<Klub> namaKlub = new ArrayList<Klub>();
 
     public Divisi(String namaDivisi) {
         this.namaDivisi = namaDivisi;
@@ -30,6 +31,14 @@ public class Divisi {
 
     public void setDaftarKlub(Klub klub) {
         this.daftarKlub.add(klub);
+    }
+
+    public ArrayList<Klub> getNamaKlub() {
+        return namaKlub;
+    }
+
+    public void setNamaKlub(Klub namaKlub) {
+        this.namaKlub.add(namaKlub);
     }
 
     @Override

@@ -8,8 +8,10 @@ import java.util.ArrayList;
 public class Liga {
 
     private String namaLiga;
-    ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
     private Klub daftarKlub;
+
+    ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
+    ArrayList<Divisi> namaDivisi = new ArrayList<Divisi>();
 
 
 
@@ -22,9 +24,19 @@ public class Liga {
         this.daftarKlub = daftarKlub;
     }
 
+
+
     public String getNamaLiga() {
         System.out.println("Nama Liga");
         return namaLiga;
+    }
+
+    public ArrayList<Divisi> getNamaDivisi() {
+        return namaDivisi;
+    }
+
+    public void setNamaDivisi(Divisi namaDivisi ) {
+        this.namaDivisi.add(namaDivisi);
     }
 
     public void setNamaLiga(String namaLiga) {
