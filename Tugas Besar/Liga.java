@@ -9,11 +9,14 @@ public class Liga {
 
     private String namaLiga;
     private Klub daftarKlub;
+    private Divisi divisi;
 
     ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
     ArrayList<Divisi> namaDivisi = new ArrayList<Divisi>();
 
-
+    public ArrayList<Klub> getDaftarKlub(Divisi namaDivisi){
+        return daftarKlub.getDivisi().daftarKlub;
+    }
 
     public Liga(String namaLiga) {
         this.namaLiga = namaLiga;
@@ -23,7 +26,6 @@ public class Liga {
         this.namaLiga = namaLiga;
         this.daftarKlub = daftarKlub;
     }
-
 
 
     public String getNamaLiga() {
@@ -60,10 +62,28 @@ public class Liga {
         this.daftarKlub = daftarKlub;
     }
 
+    public void getDaftarDivisi(String liga)
+    {
+        if (liga == getNamaLiga())
+        {
+            for (int j = 0; j <daftarDivisi.size() ; j++)
+            {
+                System.out.println(daftarDivisi.get(j));
+            }
+        }
+        else
+        {
+            System.out.println("Tidak Dapat Ditemukan");
+        }
+
+    }
+
+
     @Override
     public String toString() {
         return "Liga{" +
-                "namaLiga='" + namaLiga + '\'' +
+                "daftarKlub=" + daftarKlub +
+                ", namaLiga='" + namaLiga + '\'' +
                 '}';
     }
 }

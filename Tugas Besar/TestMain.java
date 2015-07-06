@@ -20,19 +20,34 @@ public class TestMain {
         Klub arema = new Klub("Arema Indonesia",isl,indonesia);
         Klub persebaya = new Klub("Persebaya",isl,indonesia);
 
-        Klub arema1 = new Klub("Arema Cronus",lpi,indonesia);
-        Klub persib = new Klub("Persib Bandung",lpi,indonesia);
+        Klub arema1 = new Klub("Arema Cronus",lpi,divisi1);
+        Klub persib = new Klub("Persib Bandung",lpi,divisi1);
 
 
         indonesia.setDaftarDivisi(isl);
-        indonesia.setDaftarDivisi(lpi);
+        divisi1.setDaftarDivisi(lpi);
 
+
+        indonesia.setDaftarKlub(arema);
+        indonesia.setDaftarKlub(persebaya);
+
+        divisi1.setDaftarKlub(arema1);
+        divisi1.setDaftarKlub(persib);
 
         isl.setDaftarKlub(arema);
         isl.setDaftarKlub(persebaya);
 
         lpi.setDaftarKlub(arema1);
         lpi.setDaftarKlub(persib);
+
+
+
+//
+        System.out.println("Tambahan Pak Prima");
+        System.out.println("dari liga manggil semua klub dari divisi");
+        System.out.println(indonesia.getDaftarKlub(isl));
+        System.out.println(divisi1.getDaftarKlub(lpi));
+        System.out.println("");
 
         System.out.println("Tambahan dari pak. Prima");
         indonesia.setNamaDivisi(isl);
@@ -48,7 +63,6 @@ public class TestMain {
         indonesia.getDaftarDivisi();
         System.out.println(indonesia.getNamaLiga());
         System.out.println(indonesia.getNamaDivisi());
-        System.out.println(indonesia.getDaftarDivisi());
         System.out.println("");
 
 //
@@ -75,10 +89,11 @@ public class TestMain {
 //        No 5(get
         System.out.println("Nomer 5 get klub ini berada di liga apa by nama klub");
         arema.setLiga(divisi1);
-        arema.getNamaKlub();
+        arema.setLiga(indonesia);
         System.out.println(arema.getNamaKlub());
         System.out.println(arema.getLiga());
         System.out.println("");
+
 
 
     }
