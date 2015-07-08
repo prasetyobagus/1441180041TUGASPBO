@@ -14,8 +14,12 @@ public class Liga {
     ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
     ArrayList<Divisi> namaDivisi = new ArrayList<Divisi>();
 
-    public ArrayList<Klub> getDaftarKlub(Divisi namaDivisi){
-        return daftarKlub.getDivisi().daftarKlub;
+    public ArrayList<Klub> getKlub(){
+        return getKlub();
+    }
+
+    public ArrayList<Klub> getDaftarKlub(Divisi Divisi){
+        return Divisi.daftarKlub;
     }
 
     public Liga(String namaLiga) {
@@ -82,7 +86,6 @@ public class Liga {
     @Override
     public String toString() {
         return "Liga{" +
-                "daftarKlub=" + daftarKlub +
                 ", namaLiga='" + namaLiga + '\'' +
                 '}';
     }

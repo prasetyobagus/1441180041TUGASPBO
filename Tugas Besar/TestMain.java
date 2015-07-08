@@ -86,7 +86,7 @@ public class TestMain {
         System.out.println(arema.getDivisi());
         System.out.println("");
 
-//        No 5(get
+//
         System.out.println("Nomer 5 get klub ini berada di liga apa by nama klub");
         arema.setLiga(divisi1);
         arema.setLiga(indonesia);
